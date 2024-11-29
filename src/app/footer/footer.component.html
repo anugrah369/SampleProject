@@ -1,0 +1,68 @@
+<footer class="pd-top-130" id="fat-pb-5c2f3065-ecc8-04b2-5ecf-fb3d1860ce50">
+    <div class="fat-fullwidth">
+        <div class="container">
+            <div class="row" id="fat-pb-d4e45621-89fa-5a08-767d-10772b742c4f" data-animation="none"
+                data-animation-delay="0" data-mute="1">
+                <div class="fat-col col-md-12 col-xs-12 col-sm-12" data-animation="none" data-animation-delay="0"
+                    id="fat-pb-5060e564-e9df-07b5-caf4-d13a6a7f0506" data-mute="1" data-fit-to-bg="0">
+                    <app-logo [class]="class" [logourl]="imageurl"></app-logo>
+                </div>
+
+
+                <div class="fat-col col-md-12 col-xs-12 col-sm-12 text-center mg-top-5" data-animation="none"
+                    data-animation-delay="0" id="fat-pb-f5ad8e25-7469-0719-2375-d92b422d99b3" data-mute="1">
+
+                    <app-socialicons *ngFor="let icon of iconList" [icon]="icon"></app-socialicons>
+                </div>
+
+                <app-email></app-email>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mg-top-70" id="fat-pb-371e7a74-bcfa-071e-37e8-dc306c3a649b" data-animation="none"
+                data-animation-delay="0" data-mute="1">
+                <div class="fat-col col-md-3 col-xs-12 col-sm-12" data-animation="none" data-animation-delay="0"
+                    id="fat-pb-a9646c8e-f63c-b291-c68f-2d8bb97ccd26" data-mute="1" data-fit-to-bg="0">
+                    <app-title [text]="'Contact Us'"></app-title>
+                    <div class="fat-list lk-list-block">
+                        <ul class="no-list-style">
+                            <app-footeritems [list]="contactList"></app-footeritems>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fat-col col-md-3 col-xs-12 col-sm-12" data-animation="none" data-animation-delay="0"
+                    id="fat-pb-391dfd70-0aa4-ff82-75eb-9f5917873cf4" data-mute="1" data-fit-to-bg="0">
+                    <div id="fat-pb-1d3df9a9-8cf6-5d03-1cc0-bd7585fb7da3" class="lk-widget-container">
+                        <div class="widget widget_nav_menu">
+                            <app-title [text]="'Useful Link'"></app-title>
+                            <div class="menu-menu-footer-container">
+                                <ul id="menu-menu-footer" class="menu">
+                                    <app-externallinks [list]="externalLinks"></app-externallinks>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fat-col col-md-3 col-xs-12 col-sm-12 sm-mg-top-60 xs-mg-top-60" data-animation="none"
+                    data-animation-delay="0" id="fat-pb-7d7a9096-648f-4513-5646-4440034ebf3c" data-mute="1">
+                    <app-title [text]="'Twitter Feed'"></app-title>
+
+                    <div class="fat-twitter-feed owl-carousel"
+                        data-owl-options='{"items":1,"margin":0,"dots":false,"nav":false,"autoHeight":"true","autoplay":true,"autoplayTimeout":3000}'>
+                        <p class="twitter-error">Could not authenticate you</p>
+                    </div>
+                </div>
+                <div class="fat-col col-md-3 col-xs-12 col-sm-12 sm-mg-top-60 xs-mg-top-60" data-animation="none"
+                    data-animation-delay="0" id="fat-pb-37bc87eb-a248-471e-2279-601bcf841359" data-mute="1">
+                    <app-title [text]="'OPENING HOURS'" [description]="'Architecto beatae vitae dicta sunt ipsam voluptatem quia voluptas sit aspernatur'"></app-title>
+                    <div class="fat-list lk-list-half-size mg-top-20">
+                        <ul class="no-list-style">
+                            <app-footeritems [list]="openingHours"></app-footeritems>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-copyright></app-copyright>
+    </div>
+</footer>

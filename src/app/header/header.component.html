@@ -1,0 +1,60 @@
+<header class="fat-header header-float header-content-fat-fullwidth" id="fat-pb-7f998e00-4e4a-d7df-7ee2-c3653eec5c50">
+    <div class="fat-fullwidth">
+        <div class="container">
+            <div class="row" id="fat-pb-35d414ba-6f7c-d173-fd7e-d33752cfa844" data-animation="none"
+                data-animation-delay="0" data-mute="1">
+                <app-datetime></app-datetime>
+                <div class="fat-col col-md-4 col-xs-12 col-sm-12" data-animation="none" data-animation-delay="0"
+                    id="fat-pb-4ad447c6-de30-a40b-d9ba-576707119c2a" data-mute="1" data-fit-to-bg="0">
+                    <app-logo [class]="classweb" [logourl]="imageurlweb"></app-logo>
+                </div>
+                <!-- other icons can be added dynamically from iconList-->
+                <div class="fat-col col-md-4 col-xs-12 col-sm-12 text-right pd-top-40" data-animation="none"
+                    data-animation-delay="0" id="fat-pb-eb4c2443-39ff-e973-e64f-c47e16cf1bd2" data-mute="1">
+                    <app-socialicons *ngFor="let icon of iconList" [icon]="icon"></app-socialicons>
+                </div>
+            </div>
+        </div>
+        <!-- menu list items are passed to submenu. it can be added or removed dynamically -->
+        <div class="container">
+            <div class="row" id="fat-pb-ab871b13-c43b-433c-e634-d33316e6b798" data-animation="none"
+                data-animation-delay="0" data-mute="1">
+                <div class="fat-col col-md-12 col-xs-12 col-sm-12" data-animation="none" data-animation-delay="0"
+                    id="fat-pb-211e7670-1e1d-1a31-7f10-bf9fa79dfbd7" data-mute="1">
+                    <nav id="fat-pb-1528958b-544b-5071-3134-9a7611505b7d"
+                        class="main-navigation menu menu-type-normal menu-hover-02">
+                        <div class="menu-main-menu-container">
+                            <app-submenu [menuList]="menuList"></app-submenu>
+                        </div>
+                    </nav>
+                    <app-searchbox></app-searchbox>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="fat-mobile-icon"><span class="lk-icon-lines"></span></a>
+</header>
+<!-- mobile header -->
+<header class="fat-header header-mobile header-content-fat-fullwidth" id="fat-pb-f05a5aa0-519d-a884-80ec-65a181c29ddf">
+    <div class="fat-fullwidth">
+        <div class="container">
+            <div class="row" id="fat-pb-93a42422-33db-bca7-fdee-e5094d272115" data-animation="none"
+                data-animation-delay="0" data-mute="1">
+                <!-- same dom for web and mob. so component ca be reused -->
+                <app-logo [class]="classmob" [logourl]="imageurlmob"></app-logo>
+                <div class="fat-col col-md-8 col-xs-12 col-sm-12" data-animation="none" data-animation-delay="0"
+                    id="fat-pb-d42b2f1b-5c7a-6627-1766-ff2fd2b9dce9" data-mute="1" data-fit-to-bg="0">
+                    <nav id="fat-pb-e249ab1b-5275-443f-be25-c9b7cf944fa4"
+                        class="main-navigation menu menu-type-float-right menu-hover-01">
+                        <div class="menu-main-menu-container">
+                            <app-submenu [menuList]="menuList"></app-submenu>
+                        </div>
+                    </nav>
+                    <a href="javascript:void(0)" class="fat-icon-float-menu" data-menu-type="float-right"><span
+                            class="lk-icon-lines"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="fat-mobile-icon"><span class="lk-icon-lines"></span></a>
+</header>

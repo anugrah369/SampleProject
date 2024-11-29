@@ -1,0 +1,19 @@
+<ul id="menu-main-menu" class="menu">
+    <li *ngFor="let item of menuList; let i = index" id="menu-item-{{i}}"
+        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-{{i}}">
+        <a href="{{item.link}}">{{item.name}}</a>
+        <ul class="sub-menu">
+            <li *ngFor="let item of item.items; let i=index" id="menu-item-{{i}}"
+                [ngClass]="item.subItems.length > 0 ? 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-{{i}}' : 'menu-item menu-item-type-post_type menu-item-object-page menu-item-{{i}}'">
+                <a href="{{item.link}}">{{item.name}}</a>
+                <ul class="sub-menu custom-style" *ngIf="item.subItems.length > 0">
+                    <li *ngFor="let it of item.subItems; let j=index"
+                        class="custom-style1 menu-item menu-item-type-post_type menu-item-object-page menu-item-{{j}}">
+                        <a href="{{it.link}}">{{it.name}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+</ul>

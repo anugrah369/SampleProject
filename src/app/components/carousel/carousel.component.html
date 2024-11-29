@@ -1,0 +1,117 @@
+<!-- Carousel data is added from js dynamically -->
+<div class="container">
+    <div class="row" id="fat-pb-6910ee5b-d2b3-656a-b3ea-04821ddb2d5e" data-animation="none" data-animation-delay="0"
+        data-mute="1">
+        <div class="fat-col col-md-12 col-xs-12 col-sm-12" data-animation="none" data-animation-delay="0"
+            id="fat-pb-ed1cf04b-86b1-ee0d-6a1a-b67902b509ab" data-mute="1" data-fit-to-bg="0">
+            <link href="http://fonts.googleapis.com/css?family=Nunito:700%7CLibre+Baskerville:400%7COpen+Sans:400"
+                rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+            <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery"
+                style="background: transparent; padding: 0px;">
+                <!-- START REVOLUTION SLIDER 5.4.6.4 fullscreen mode -->
+                <div id="rev_slider_2_1" class="rev_slider fullscreenbanner" style="display: none;"
+                    data-version="5.4.6.4">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li *ngFor="let item of carouselElements" data-index="rs-8" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                            data-masterspeed="300"
+                            data-thumb="http://themes.roninwp.com/cronus/wp-content/uploads/2018/04/slide-home-02-1-100x50.jpg"
+                            data-rotate="0" data-saveperformance="off" data-title="Slide one" data-param1=""
+                            data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                            data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{item.mainImage}}"
+                                alt="" title="slide-home-02-1" width="1920" height="1080"
+                                data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                                class="rev-slidebg" data-no-retina />
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme" id="slide-8-layer-1"
+                                data-x="['center','center','center','center']" data-hoffset="['1','1','0','-5']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-20','-20','-6','-16']"
+                                data-fontsize="['82','82','60','50']" data-lineheight="['82','82','60','52']"
+                                data-letterspacing="['-5','-5','0','0']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                data-frames='[{"delay":890,"speed":1500,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="
+                                    z-index: 5;
+                                    white-space: nowrap;
+                                    font-size: 82px;
+                                    line-height: 82px;
+                                    font-weight: 700;
+                                    color: #ffffff;
+                                    letter-spacing: -5px;
+                                    font-family: Nunito;
+                                    background-color: rgba(0, 0, 0, 0);
+                                ">
+                                <div style="background-color: #111; padding-left: 10px; padding-right: 10px;">
+                                    {{item.layerOneText}}</div>
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption" id="slide-8-layer-2" data-x="['center','center','center','center']"
+                                data-hoffset="['6','6','6','6']" data-y="['middle','middle','middle','middle']"
+                                data-voffset="['-85','-85','-85','-85']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                data-responsive="off"
+                                data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 6; white-space: nowrap; font-size: 14px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px; font-family: Libre Baskerville;">
+                                <em>{{item.layerTwoText}}</em>
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme" id="slide-8-layer-12"
+                                data-x="['center','center','center','center']" data-hoffset="['10','10','10','7']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['68','68','78','45']"
+                                data-fontsize="['82','82','60','50']" data-lineheight="['82','82','62','52']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                                data-responsive_offset="on"
+                                data-frames='[{"delay":2360,"speed":880,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="
+                                    z-index: 7;
+                                    white-space: nowrap;
+                                    font-size: 82px;
+                                    line-height: 82px;
+                                    font-weight: 700;
+                                    color: #ffffff;
+                                    letter-spacing: -5px;
+                                    font-family: Nunito;
+                                    background-color: rgba(110, 69, 226, 0);
+                                ">
+                                <div style="background-color: #6e45e2; padding-left: 10px; padding-right: 10px;">{{item.layerThreeText}}</div>
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" id="slide-8-layer-14" data-x="['left','left','left','left']"
+                                data-hoffset="['550','550','550','550']" data-y="['top','top','top','top']"
+                                data-voffset="['600','600','600','600']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                data-responsive="off"
+                                data-frames='[{"delay":3180,"speed":830,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px; font-family: Open Sans;">
+                                <a href="#" class="bt-slider">{{item.layerFourText}}</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+        </div>
+    </div>
+</div>
